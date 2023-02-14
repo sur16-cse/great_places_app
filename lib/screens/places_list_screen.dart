@@ -21,7 +21,7 @@ class PlacesListScreen extends StatelessWidget {
         ],
       ),
       body: Consumer<GreatPlaces>(
-        builder: (ctx, greatPlaces, ch) => greatPlaces.items.length <= 0
+        builder: (ctx, greatPlaces, ch) => greatPlaces.items.isEmpty
             ? ch!
             : ListView.builder(
                 itemCount: greatPlaces.items.length,
@@ -35,7 +35,7 @@ class PlacesListScreen extends StatelessWidget {
                   },
                 ),
               ),
-        child: Center(
+        child: const Center(
           child: Text("Got no places  yet, start adding some! "),
         ),
       ),

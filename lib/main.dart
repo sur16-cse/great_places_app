@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
                 .copyWith(secondary: Colors.amber)),
         home: const PlacesListScreen(),
         routes: {
-          AddPlaceScreen.routeName:(ctx)=>AddPlaceScreen(),
+          AddPlaceScreen.routeName:(ctx)=>const AddPlaceScreen(),
         },
       ),
     );
